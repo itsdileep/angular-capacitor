@@ -1,3 +1,32 @@
+#Setup angular app with Capacitor run time
+
+ng new angularCapacitor --routing --style=scss
+cd ./angularCapacitor
+
+# Add Capacitor
+npm install @capacitor/core
+npm install @capacitor/cli --save-dev
+
+# Setup the Capacitor config
+npx cap init
+
+npm install @capacitor/ios @capacitor/android
+npx cap add ios
+npx cap add android
+
+# Build the Angular app
+ng build --prod
+
+# Sync the build folder to native projects
+npx cap sync
+
+#Open the app with respective Editor and build the app
+npx cap open ios
+npx cap open android
+
+
+
+
 # AngularCapacitor
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
