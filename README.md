@@ -1,4 +1,4 @@
-#Setup angular app with Capacitor run time
+# Setup angular app with Capacitor run time
 
 ng new angularCapacitor --routing --style=scss
 cd ./angularCapacitor
